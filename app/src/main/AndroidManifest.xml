@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!-- package는 앱의 식별자 정보를 의미 Gradle 파일의 applicationId 값과 의미가 동일 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.korea.myapplication">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--
+     앱의 요소를 등록하기 위한 태그
+         android:icon="@mipmap/ic_launcher" ; res 하위 폴더의 리소스를 지칭하며, 자바코드에서 R.mipmap.ic_launcher와 의미가 동일, 즉 icon의 스타일을 등록
+         이하 속성들은 모두 비슷한 의미를 지님
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- activity 컴포넌트 등록하기 위한 태그 -->
+        <activity android:name=".MainActivity">
+
+            <!-- 사용자가 아이콘 클릭 시 MainActivity가 실행 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Lab3_2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VisibilityActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BasicCompActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.korea.chap04_layout.LinearLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.korea.chap04_layout.RelativeLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.korea.chap04_layout.FrameLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name="com.example.korea.chap04_layout.TableGridLayout">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name="com.example.korea.chap05_alarm_effect.alarmEffect">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
